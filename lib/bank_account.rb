@@ -6,5 +6,7 @@ attr_accessor :balance, :status
    @balance = balance
    @status = status
  end
-
+ def deposit(number)
+   @balance += number
+ end
 end
