@@ -13,4 +13,13 @@ class Transfer
       false
     end
   end
+  def execute_transaction
+    if self.valid? && @sender.balance > amount
+      @sender.balance -= amount
+      @receiver.balance += amount
+    elsif self.valid?
+      return "transaction rejected. Please check your account balance."
+    end
+      
+  end
 end
