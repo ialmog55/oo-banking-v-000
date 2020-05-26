@@ -10,7 +10,7 @@ attr_accessor :balance, :status
    @balance += number
  end
  def display_balance
-   @balance
+   puts "Your balance is $#{@balance}."
  end
  def close_account
    @status = "closed"
