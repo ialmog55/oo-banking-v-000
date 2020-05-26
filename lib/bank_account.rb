@@ -9,4 +9,10 @@ attr_accessor :balance, :status
  def deposit(number)
    @balance += number
  end
+ def display_balance
+   @balance
+ end
+ def close_account
+   @status = "closed"
+ end
  end
