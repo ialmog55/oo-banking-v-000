@@ -6,4 +6,11 @@ class Transfer
     @receiver = receiver
     @amount = amount
   end
+  def valid?
+    if @sender.valid? && @receiver.valid?
+      true
+    else
+      false
+    end
+  end
 end
