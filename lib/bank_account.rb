@@ -15,4 +15,11 @@ attr_accessor :balance, :status
  def close_account
    @status = "closed"
  end
+ def valid?
+   if @status == "open" && @balance > 0
+     true
+   else
+     false
+   end
+ end
  end
