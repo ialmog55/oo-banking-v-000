@@ -9,4 +9,4 @@ attr_accessor :balance, :status
  def deposit(number)
    @balance += number
  end
-end
+ end
