@@ -20,6 +20,6 @@ class Transfer
     elsif self.valid?
       return "transaction rejected. Please check your account balance."
     end
-      
+
   end
 end
